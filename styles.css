@@ -1,0 +1,495 @@
+/* styles.css - Complete Final Version with Updated Footer */
+/* Footer: Dark Green Background (#006400) | White Text | Brand-Colored Social Icons */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #006400; /* Health Green */
+    color: white;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.top-nav li {
+    margin-left: 1.5rem;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.top-nav a:hover {
+    color: #FF6F61; /* Vibrant coral */
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 100, 0, 0.75), rgba(0, 100, 0, 0.75)), 
+                url('https://meridianinstitutenhp.ac.ug/wp-content/uploads/2024/12/IMG_2642-scaled.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65a50;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.intro, .about, .programs, .why-us, .contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* About Page Styles */
+.about h1 {
+    text-align: center;
+    color: #006400;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.about-section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+    color: #006400;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #FF6F61;
+    border-radius: 2px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.values-list li:last-child {
+    border-bottom: none;
+}
+
+.values-list strong {
+    color: #006400;
+}
+
+/* Programs Section */
+.programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.programs h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #006400;
+    margin-bottom: 1.5rem;
+}
+
+.program {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+}
+
+.program-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-image:hover {
+    transform: scale(1.03);
+}
+
+.program h2 {
+    color: #006400;
+    margin: 1rem 0;
+}
+
+.program p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Why Us & Contact Headings */
+.why-us h1,
+.contact h1 {
+    color: #006400;
+    text-align: center;
+}
+
+.why-us ul {
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.why-us li {
+    margin-bottom: 0.8rem;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #006400;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #006400;
+    color: white;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #004d00;
+}
+
+#form-response {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer - Dark Green Background with White Text */
+footer {
+    background-color: #006400;
+    color: white;
+    padding: 3rem 1rem 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #FF6F61;
+    margin-bottom: 0.8rem;
+}
+
+.footer-content p,
+.footer-content a {
+    color: white;
+    font-weight: 500;
+}
+
+/* Social Icons - Brand Colors */
+.footer-content .social h3 {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Brand-specific icon colors (using fill) */
+.social-icons a:nth-child(1) svg { fill: #1877F2; } /* Facebook */
+.social-icons a:nth-child(2) svg { fill: #000000; } /* X/Twitter (black logo) */
+.social-icons a:nth-child(3) svg { fill: #E4405F; } /* Instagram */
+.social-icons a:nth-child(4) svg { fill: #25D366; } /* WhatsApp */
+
+.social-icons a:hover svg {
+    fill: white;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* WhatsApp Floating Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .top-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #006400;
+    }
+
+    .top-nav ul.active {
+        display: flex;
+    }
+
+    .top-nav li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .top-nav {
+        padding: 1rem;
+    }
+
+    .program {
+        padding: 1.5rem;
+    }
+    
+    .program-image {
+        max-height: 250px;
+    }
+
+    .about h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+    
+    .social-icons a {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .social-icons svg {
+        width: 20px;
+        height: 20px;
+    }
+}
